@@ -1,0 +1,684 @@
+/* 0.390625 * 100vh( telefon ucun 576px,  tablet 576px - 772px, */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title, .form .all .head, .blog .all .head, .testimonials .all .head, .package .all .head, .gallery .all .head, .services .all .head, .destinations .head {
+  position: relative;
+  text-align: center;
+  padding: 2% 0;
+}
+.title span, .form .all .head span, .blog .all .head span, .testimonials .all .head span, .package .all .head span, .gallery .all .head span, .services .all .head span, .destinations .head span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: calc(80px + 0.390625vw);
+  color: #efefef;
+  z-index: -1;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  font-size: calc(2.5rem + 2.34375vw);
+}
+.title h1, .form .all .head h1, .blog .all .head h1, .testimonials .all .head h1, .package .all .head h1, .gallery .all .head h1, .services .all .head h1, .destinations .head h1 {
+  color: #6168FF;
+  font-size: calc(15px + 0.390625vw);
+  margin-bottom: 0;
+  font-family: "Nunito", sans-serif;
+}
+.title p, .form .all .head p, .blog .all .head p, .testimonials .all .head p, .package .all .head p, .gallery .all .head p, .services .all .head p, .destinations .head p {
+  font-size: calc(18px + 0.390625vw);
+  font-family: "Nunito", sans-serif;
+}
+
+.rating, .testimonials .all .employees .card_info .stars, .package .all .boxes .box a .about .stars {
+  padding-bottom: 1rem;
+}
+.rating i, .testimonials .all .employees .card_info .stars i, .package .all .boxes .box a .about .stars i {
+  color: #fec42d;
+  font-size: 13px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 11;
+}
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+header .content .logo {
+  width: 15%;
+}
+header .content .logo img {
+  width: 100%;
+}
+header .content nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+header .content nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: calc(10px + 0.390625vw);
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  transition: 0.4s;
+}
+header .content nav ul li a:hover {
+  color: #6168FF;
+}
+header .content .menu {
+  display: none;
+}
+
+.dicover {
+  background-image: url(/assests/Images/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.dicover .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+.dicover .overlay .content {
+  padding-top: 30vh;
+  text-align: center;
+}
+.dicover .overlay .content h1 {
+  color: #fff;
+  font-size: calc(10px + 0.390625vw);
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 1rem;
+}
+.dicover .overlay .content h3 {
+  color: #fff;
+  font-size: calc(40px + 0.78125vw);
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+.dicover .overlay .content a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  padding: 10px 30px;
+  background-color: #6168FF;
+  border: 2px solid #6168FF;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.dicover .overlay .content a:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.section2 .all {
+  padding: 5% 0;
+}
+.section2 .all .left .box i {
+  font-size: 40px;
+  padding-bottom: 0.5rem;
+  color: #6168FF;
+}
+.section2 .all .left .box h1 {
+  font-size: 25px;
+  color: #333;
+  font-family: "Nunito", sans-serif;
+}
+.section2 .all .left .box p {
+  font-size: 15px;
+  line-height: 200%;
+  color: #666;
+  font-family: "Nunito", sans-serif;
+}
+.section2 .all .right {
+  position: relative;
+  box-shadow: 18px 18px 26px 0 rgba(0, 1, 1, 0.2);
+}
+.section2 .all .right img {
+  width: 100%;
+}
+.section2 .all .right a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section2 .all .right a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: calc(50px + 0.78125vw);
+  color: #6168FF;
+  transition: 0.5s;
+}
+.section2 .all .right a i:hover {
+  color: #0a58ca;
+}
+
+.destinations {
+  padding: 5% 0;
+}
+.destinations .cards .box {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.destinations .cards .box a {
+  text-decoration: none;
+}
+.destinations .cards .box a img {
+  width: 100%;
+  border-radius: 10px;
+}
+.destinations .cards .box a .about {
+  border: 1px solid rgb(194, 194, 194);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.destinations .cards .box a .about div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0;
+}
+.destinations .cards .box a .about div h1 {
+  display: inline-block;
+  color: #333;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+}
+.destinations .cards .box a .about div span {
+  color: #666;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+}
+.destinations .cards .box a .about p {
+  color: #666;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+}
+
+.services .all .cards {
+  padding: 2% 0 10% 0;
+}
+.services .all .cards .service {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F4F9FF;
+  padding: 8%;
+}
+.services .all .cards .service i {
+  width: 15%;
+  font-size: 40px;
+  color: #6168FF;
+}
+.services .all .cards .service div {
+  display: inline-block;
+  width: 80%;
+}
+.services .all .cards .service div h1 {
+  font-size: 20px;
+  color: #333;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+.services .all .cards .service div p {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 200%;
+  color: #666;
+}
+
+.gallery .all {
+  padding: 5% 0;
+}
+.gallery .all .boxes .box {
+  position: relative;
+  overflow: hidden;
+}
+.gallery .all .boxes .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.gallery .all .boxes .box:hover::before {
+  background-color: rgba(97, 104, 255, 0.8);
+}
+.gallery .all .boxes .box img {
+  width: 100%;
+}
+.gallery .all .boxes .box h1 {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 20px;
+}
+.gallery .all .boxes .box:hover h1 {
+  bottom: 40%;
+}
+.gallery .all .boxes .box a {
+  position: absolute;
+  bottom: 5%;
+  right: -14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background-color: #F4F9FF;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.gallery .all .boxes .box a:hover {
+  background-color: rgb(56, 56, 56);
+}
+.gallery .all .boxes .box a i {
+  color: #333;
+  font-size: 1rem;
+}
+.gallery .all .boxes .box a:hover i {
+  color: #fff;
+}
+.gallery .all .boxes .box:hover a {
+  right: 5%;
+}
+
+.package .all {
+  padding: 5% 0;
+}
+.package .all .boxes {
+  padding: 5% 0;
+}
+.package .all .boxes .box {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+.package .all .boxes .box a {
+  text-decoration: none;
+  overflow: hidden;
+}
+.package .all .boxes .box a img {
+  width: 100%;
+}
+.package .all .boxes .box a .about {
+  padding: 5%;
+  position: relative;
+}
+.package .all .boxes .box a .about h1 {
+  color: #333;
+  font-size: 20px;
+  padding-bottom: 1rem;
+}
+.package .all .boxes .box a .about .info i {
+  color: #333;
+  padding-bottom: 1rem;
+}
+.package .all .boxes .box a .about .info span {
+  color: #666;
+}
+.package .all .boxes .box a .about .price {
+  padding: 12px 24px;
+  background-color: #6168FF;
+  border-radius: 30px;
+  position: absolute;
+  right: 5%;
+  top: -22px;
+  transition: 0.5s;
+}
+.package .all .boxes .box a .about .price span {
+  color: #fff;
+  font-size: 16px;
+}
+.package .all .boxes .box a:hover .price {
+  background-color: #1e2050;
+}
+
+.partner {
+  background-image: url(https://getmasum.com/html-preview/nour/assets/img/bg/client-bg.png);
+  background-color: #6168FF;
+  background-position: center;
+  background-size: cover;
+}
+.partner .all {
+  padding: 5% 0;
+}
+.partner .all .box {
+  overflow: hidden;
+}
+.partner .all .box a img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.testimonials .all {
+  padding: 5% 0;
+}
+.testimonials .all .employees .card_info {
+  text-align: center;
+  padding: 10%;
+  margin-bottom: 1rem;
+  background-color: #F4F9FF;
+}
+.testimonials .all .employees .card_info .img {
+  width: 30%;
+  margin: auto;
+  position: relative;
+}
+.testimonials .all .employees .card_info .img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url(https://getmasum.com/html-preview/nour/assets/img/quote-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #6168FF;
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+}
+.testimonials .all .employees .card_info .img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.testimonials .all .employees .card_info p {
+  padding: 10% 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+.testimonials .all .employees .card_info h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.testimonials .all .employees .card_info h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  padding-bottom: 0.5rem;
+  font-weight: 200;
+}
+.blog .all .boxes {
+  padding-bottom: 5%;
+}
+.blog .all .boxes .box {
+  border: 1px solid #ebe6de;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+  margin-bottom: 1rem;
+}
+.blog .all .boxes .box .img img {
+  width: 100%;
+}
+.blog .all .boxes .box .bottom {
+  padding: 10%;
+}
+.blog .all .boxes .box .bottom .time {
+  padding-bottom: 1rem;
+}
+.blog .all .boxes .box .bottom .time i {
+  color: #666;
+}
+.blog .all .boxes .box .bottom .time span {
+  font-family: "Nunito", sans-serif;
+  color: #666;
+}
+.blog .all .boxes .box .bottom a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.blog .all .boxes .box .bottom a:hover {
+  color: #6168FF;
+}
+
+.form .all {
+  padding: 5%;
+}
+.form .all .head span {
+  top: 40% !important;
+}
+.form .all .contact-form {
+  width: 70%;
+  margin: auto;
+  padding: 5%;
+  background-color: #F4F9FF;
+}
+.form .all .contact-form #name, .form .all .contact-form #description, .form .all .contact-form #subject, .form .all .contact-form #phone, .form .all .contact-form #email {
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  height: 50px;
+  outline-color: #6168FF;
+}
+.form .all .contact-form #name::-moz-placeholder, .form .all .contact-form #description::-moz-placeholder, .form .all .contact-form #subject::-moz-placeholder, .form .all .contact-form #phone::-moz-placeholder, .form .all .contact-form #email::-moz-placeholder {
+  font-family: "Nunito", sans-serif;
+}
+.form .all .contact-form #name::placeholder, .form .all .contact-form #description::placeholder, .form .all .contact-form #subject::placeholder, .form .all .contact-form #phone::placeholder, .form .all .contact-form #email::placeholder {
+  font-family: "Nunito", sans-serif;
+}
+.form .all .contact-form #description {
+  resize: none;
+  height: 30vh;
+}
+.form .all .contact-form #description::-moz-placeholder {
+  font-family: "Nunito", sans-serif;
+}
+.form .all .contact-form #description::placeholder {
+  font-family: "Nunito", sans-serif;
+}
+.form .all .contact-form .btnn {
+  width: 10rem;
+  margin: auto;
+  text-align: center;
+}
+.form .all .contact-form .btnn button {
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 5px;
+  background-color: #6168FF;
+  border: 1px solid #6168FF;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  transition: 0.4s;
+}
+.form .all .contact-form .btnn:hover button {
+  background-color: #1e2050;
+}
+
+.footer {
+  background-color: #00102A;
+  -webkit-clip-path: polygon(0 250px, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 250px, 100% 0, 100% 100%, 0% 100%);
+  padding: 25vh 0 2rem;
+}
+.footer .all .footer-top {
+  padding-bottom: 2%;
+  border-bottom: 1px solid gray;
+}
+.footer .all .footer-top .info {
+  margin-bottom: 2rem;
+}
+.footer .all .footer-top .info .img {
+  width: 60%;
+  padding-bottom: 1rem;
+}
+.footer .all .footer-top .info .img img {
+  width: 100%;
+}
+.footer .all .footer-top .info .contact div {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .all .footer-top .info .contact div i {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.footer .all .footer-top .info .contact div span {
+  width: 90%;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+.footer .all .footer-top .about-us, .footer .all .footer-top .support {
+  margin-bottom: 2rem;
+}
+.footer .all .footer-top .about-us h1, .footer .all .footer-top .support h1 {
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+}
+.footer .all .footer-top .about-us div, .footer .all .footer-top .support div {
+  padding-bottom: 10px;
+}
+.footer .all .footer-top .about-us div a, .footer .all .footer-top .support div a {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+  font-size: 15px;
+}
+.footer .all .footer-top .about-us div a:hover, .footer .all .footer-top .support div a:hover {
+  color: #6168FF;
+}
+.footer .all .footer-top .subscribe {
+  margin-bottom: 2rem;
+}
+.footer .all .footer-top .subscribe h1 {
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+}
+.footer .all .footer-top .subscribe p {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+.footer .all .footer-top .subscribe input {
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  height: 50px;
+  outline-color: #6168FF;
+  border-radius: 5px;
+}
+.footer .all .footer-top .subscribe input::-moz-placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+.footer .all .footer-top .subscribe input::placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+.footer .all .footer-top .subscribe button {
+  padding: 13px 25px;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  background-color: #6168FF;
+  font-weight: bold;
+  border: 1px solid #6168FF;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.footer .all .footer-top .subscribe button:hover {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #fff;
+}
+.footer .all .footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+}
+.footer .all .footer-bottom .copyright {
+  padding-bottom: 1rem;
+}
+.footer .all .footer-bottom .copyright span {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  font-size: 15px;
+}
+.footer .all .footer-bottom .social a {
+  text-decoration: none;
+  color: #6168FF;
+  transition: 0.4s;
+}
+.footer .all .footer-bottom .social a i {
+  font-size: 18px;
+  margin: 5px;
+}
+.footer .all .footer-bottom .social a:hover {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  header .content .logo {
+    width: 35%;
+  }
+  header .content .logo a {
+    width: 100%;
+  }
+  header .content .logo a img {
+    width: 100%;
+  }
+  header .content nav {
+    display: none;
+  }
+  header .content .menu {
+    display: inline;
+    width: 10%;
+    font-size: 35px;
+    color: #6168FF;
+  }
+  .form .all .contact-form {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg_back{
+    width: 100%;
+    background-image: url(/Images/gtrr.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg_middle{
+    background-image: url(/Images/green-banner.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.textarea{
+    padding: 20% 5%;
+}
+
+.text{
+    align-items: start;
+    width: 50%;
+    height: 100%;
+}
+
+.text h1{
+    font-size: 70px;
+}
+
+.text p{
+    font-weight: ;
+}
